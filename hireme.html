@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+    <title>Hire Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #545469;
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        header .container {
+            display: flex;
+            justify-content: center;
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        header nav ul li {
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        header nav ul li a:hover,
+        header nav ul li a.active {
+            color: #77aaff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hire-me {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .hire-me h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .hire-me .intro {
+            font-size: 18px;
+            margin-bottom: 40px;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+        .skills, .interests {
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .skills h2, .interests h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .skills ul, .interests ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skills ul li, .interests ul li {
+            font-size: 20px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        .skills ul li i, .interests ul li i {
+            margin-right: 10px;
+            color: #77aaff;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hire-me">
+            <h1 class="section-title">Hire Me</h1>
+            <div class="intro">
+                <p>Hello! I'm Sai Rishika Kotnani, a passionate and skilled frontend developer ready to bring your ideas to life.</p>
+            </div>
+            <hr>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i> HTML</li> 
+                    <li><i class="fa-brands fa-css"></i>CSS</li>
+                    <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                    <li><i class="fa-solid fa-code"></i> React,Php</li>
+                    <li><i class="fa-solid fa-database"></i> SQL, NoSQL,DBMS</li>
+                    <li><i class="fa-solid fa-server"></i> Node.js,MongoDB</li>
+                    <li><a href="#"><i class="fa-solid fa-c"></i></a></li>
+                    <li><i class="fa-brands fa-cplusplus">C++</li>
+                        <li><i class="fa-brands fa-python">Python</i></li>
+                        <li><i class="fa-brands fa-java">Java</i></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="interests">
+                <h2>Interests</h2>
+                <ul>
+                    <li><i class="fa-solid fa-palette"></i> Web Design</li>
+                    <li><i class="fa-solid fa-mobile-alt"></i> Mobile App Development</li>
+                    <li><i class="fa-solid fa-cloud"></i>Back End Development & Front End Development</li>
+                    <li><i class="fa-solid fa-robot"></i> AI and Machine Learning</li>
+                </ul>
+            </div>
+            <div class="cta">
+                <a href="index.html" class="btn">Home</a>
+                <a href="ContactPage.html" class="btn">Contact Me</a>
+            </div>
+        </section>
+    </div>    
+</body>
+</html>

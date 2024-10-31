@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #bbbbe4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(73, 68, 131, 0.8); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-text {
+            font-size: 1.5em;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .brand {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            animation: slideInDown 1s ease-in-out;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            animation: slideInUp 1s ease-in-out;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            background-color: #f9f9f9;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form textarea {
+            height: 120px;
+        }
+
+        .contact-form button {
+            background-color: #ff6347;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff4500;
+        }
+
+        #cont {
+            height: 40px;
+            width: 40px;
+            margin-left: 4px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-text">Sai Rishika Kotnani</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <h1 class="brand">Contact <img src="https://cdn-icons-png.flaticon.com/128/1279/1279250.png" id="cont" alt="Contact Icon"></h1>
+        <div class="contact-form">
+            <form action="connect.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <br>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <br>
+                <textarea name="message" name="message" placeholder="Your Message" required></textarea>
+                <br>
+                <input type="submit" value="submit" >
+            </form>
+        </div>
+    </div>
+</body>
+</html>

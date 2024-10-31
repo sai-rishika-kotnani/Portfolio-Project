@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">Sai Rishika Kotnani</div>
+                </div>
+                <nav>
+                    <div class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li>
+                       
+                            
+                        <li><a href="#about-me"><i class="fas fa-user"></i></a></li>
+                       <li> <a href="ContactPage.html" class="btn"><i class="fas fa-envelope"></i></a></li>
+                        
+                        <li><a href="Project.html" class="btn">Projects</a></li>
+                        <li><a href="#educations" class="btn">Education</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/main_photo.jpg" alt="Profile Picture">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm a Frontend Developer</h5>
+                    <h1>Sai Rishika Kotnani</h1>
+                    <p>My educational background has given me a strong grasp of HTML, CSS, and JavaScript, and I am eager to apply these skills in a practical environment.</p>
+                    <div class="btn-group">
+                        <a href="https://drive.google.com/file/d/1G5DjmQYK9AvAZTyEpyQsHesO_795YtGU/view?usp=sharing" class="btn active" target="_blank">Resume</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="about-me">
+        <div class="wrapper">
+            <div class="about-container">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>Welcome to my portfolio! I'm Sai Rishika Kotnani, 
+                        a dedicated and passionate front-end developer interested 
+                        in creating beautiful and functional web interfaces.
+                        I love turning complex problems into simple, elegant,
+                        and intuitive designs. My educational background has equipped me
+                         with a solid foundation in computer science, and I am eager to apply
+                         these skills to real-world projects. I am proficient in various programming
+                          languages and tools, including JavaScript, HTML, CSS, C, C++, Python, and Java.
+                        In my free time, I enjoy exploring new technologies, working on personal projects,
+                        and contributing to open-source communities. I am always eager to learn 
+                        and take on new challenges. Let's connect and create something amazing together!</p>
+                    
+                </div>
+                <div class="about-image">
+                    <img src="images/about_me.jpg" alt="About Me Picture">
+                </div>
+            </div>
+        </div>
+        <div class="languages">
+            <a href="#"><i class="fa-brands fa-js"></i></a>
+            <a href="#"><i class="fa-brands fa-html5"></i></a>
+            <a href="#"><i class="fa-brands fa-css3-alt"></i></a>
+            <a href="#"><i class="fa-solid fa-c"></i></a>
+            <a href="#"><i class="fa-solid fa-cplusplus"></i></a>
+            <a href="#"><i class="fa-brands fa-python"></i></a>
+            <a href="#"><i class="fa-brands fa-java"></i></a>
+        </div>
+    </section>
+    <script>
+        var toggleBtn = document.querySelector(".menu-toggle");
+        var nav = document.querySelector(".nav-links");
+        toggleBtn.addEventListener("click", function() {
+            this.classList.toggle("active");
+            nav.classList.toggle("open");
+        });
+        var typed = new Typed('.input', {
+            strings: ["Frontend Developer", "Web Designer", "Creative Coder"],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+<section class="education" id="educations">
+    <footer class="footer">
+       <h1><br> <p align="center">Education</p></h1>
+    </footer>
+     
+      <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+            <img draggable="false" src="images/school.jpg" alt="">
+            </div>
+            <div class="content">
+            <h3>Dr.K.K.R'S Gowtham </h3>
+            <p>Eluru,West Godavari Dt.,Andhra Pradesh </p>
+            <h4>2019-2020 | Completed</h4>
+            </div>
+          </div>
+  
+      <div class="box">
+          <div class="image">
+          <img draggable="false" src="images/college.jpg" alt="">
+          </div>
+          <div class="content">
+          <h3>Sri Chaitanya Junior College</h3>
+          <p>Eluru,West Godavari Dt.,Andhra Pradesh</p>
+          <h4>2020-2022 | Completed</h4>
+          </div>
+      </div>
+  
+      <div class="box">
+        <div class="image">
+        <img draggable="false" src="images/university.jpg" alt="">
+        </div>
+        <div class="content">
+        <h3>SRM University AP</i></h3>
+        <h4>B.Tech Computer Science and Engineering</h4>
+        <p>Amaravati,Andhra Pradesh</p>
+        <h4>2022-2026 | Pursuing</h4>
+        </div>
+      </div>
+  
+  </div>
+  </section>
+    <section id="address">
+        <div class="address-container">
+            <h1 class="address-title">Address</h1>
+            <p class="address-details">Sai Rishika Kotnani</p>
+            <p class="address-details">B.Tech 3rd Year in Computer Science Engineering</p>
+            <p class="address-details">SRM UNIVERSITY AP,Neerukonda,Amaravati</p>
+            <p class="address-details">Email: sairishikakotnani@gmail.com</p>
+            <p class="address-details">Phone: +91 9849600076</p>
+        </div>
+        <div class="btn-group">
+            <a href="hireme.html" class="btn">Hire Me</a>
+           
+        </div>
+    </section>
+    <footer class="footer">
+        <p align="center">Designed by Sai Rishika Kotnani | &copy; All rights reserved</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
